@@ -6,6 +6,7 @@ Available skills for your AI team. Add your own as your workflow grows.
 
 | Skill | Command | What it does |
 |-------|---------|-------------|
+| **OGSM Framework** | `/ogsm-framework` | Real OGSM strategic planning (based on 張敏敏 methodology). Use when defining team goals. **Not OKR disguised as OGSM.** |
 | **Example Skill** | `/example-skill` | A template showing how to define a multi-agent workflow |
 | **Agent Builder** | `/agent-builder` | Create or modify AI agent roles in your team |
 
