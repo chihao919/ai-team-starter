@@ -67,14 +67,30 @@ Dispatch each agent (in parallel) with the confirmed O. Each agent writes:
 - Must answer "why not another path?"
 - No generic methods.
 
-**M (Tasks + acceptance criteria)**
+**M (Tasks + acceptance criteria — must verify that S resources were actually used)**
 - Quantitative targets (how many, how long, what sources)
 - Format requirements
 - Verification standard (who checks, how)
+- **Resource verification**: Did the team actually use the sources S committed to?
 
 **Alignment to O**
 One sentence: Why achieving this G contributes to O.
 ```
+
+**M must verify S's resource commitments — not just count deliverables.**
+
+Wrong M:
+- S: Use ICC Digital Codes as the primary reference
+- M: Document 4 code sections ← this is a deliverable, not a measure
+
+Right M:
+- S: Cross-verify using ICC Digital Codes AND NFPA official publications
+- M:
+  - Every citation cross-checked against both sources?
+  - How many corrections found through cross-verification?
+  - Any citation relying on a single source only?
+
+The test: M should read as "Did the team actually use the resources S committed to?" — not "How many things did the team produce?"
 
 ### Step 3: Add Measurement Layer (3 Agents Minimum)
 
@@ -113,6 +129,67 @@ Define gates between phases. Most important gate: **the final gate must verify O
 Example for a course:
 - Gate 3 (before deployment): Learning Outcome Validator confirms 3 personas can answer 4/5 decision questions correctly. If not, no deployment.
 
+## Principles Learned from Real Projects
+
+### Principle 1: Audience Workflow Understanding
+
+Defining "who the audience is" is not enough — you must understand **what they actually do** in their job.
+
+- Wrong: Assume the audience will do the thing you want to teach them.
+- Right: Research the audience's actual workflow, then position your content accordingly.
+
+**Example (HSW-002 v3 iteration):**
+We assumed architects would "write specs," so the course taught spec language. Wrong.
+- Architects don't write specs — they specify brands; spec writers handle the details.
+- The course should teach "situation recognition" and "how to collaborate with the spec writer."
+- Not "how to write a spec."
+
+**Diagnostic question**: Ask yourself "Would this audience **actually** do this in real life?" If unsure, interview one real audience member.
+
+---
+
+### Principle 2: Independent vs Incumbent Framing
+
+If you represent a challenger brand (not the dominant incumbents), your content should **empower** the audience — not trap them in the incumbents' ecosystem.
+
+**Example (HSW-002 v3 iteration):**
+- The three major door hardware manufacturers (Allegion, ASSA ABLOY, dormakaba) control most spec writers.
+- Architects who want to use independent manufacturers often don't know where to find resources.
+- An independent manufacturer's course responsibility: tell architects "you have other options."
+- But frame it **neutrally**: "Here are independent resource paths" — not "use us."
+
+**Diagnostic question**: Ask yourself "After reading this, does the audience feel more free or more dependent?"
+- More dependent → you wrote a sales brochure.
+- More free → you did real education.
+
+---
+
+### Principle 3: Resource Routing as a Deliverable
+
+Sometimes the best outcome of a course is not "teach them how to do it" but "tell them where to go."
+
+**Example (HSW-002 v3 iteration):**
+Architects don't need to learn to write specs. But they do need to know:
+- Encounter this scenario → this is a Waterson scenario.
+- Want to use Waterson → SpecLink, SPC Alliance can help.
+- There are resources beyond the Big Three.
+
+"Resource routing" is itself a valuable deliverable — it is not a substitute for "failed to teach well."
+
+---
+
+### Principle 4: Third-Party Framing Rule
+
+Even if you benefit from the recommendation, introduce resources from a **neutral position**.
+
+**Example:**
+- Wrong: "Use Waterson! Find us on SpecLink!"
+- Right: "Independent manufacturer spec resources have more than one path. SpecLink, SPC Alliance, and CSC/CSI are all options."
+
+**Diagnostic question**: Have a **Sales Rep Advisor** (external reviewer) read it. If they say "this smells like advertising," it's not neutral enough.
+
+---
+
 ## Anti-Patterns to Avoid
 
 ### Anti-pattern 1: G is actually M
@@ -134,6 +211,10 @@ Example for a course:
 ### Anti-pattern 5: Self-graded homework
 **Symptom**: The team checks its own work with its own standards.
 **Fix**: Introduce external standards (industry benchmarks, audience personas, different AI models).
+
+### Anti-pattern 6: Misread the audience's actual job
+**Symptom**: The course teaches skills the audience does not actually use in their work.
+**Fix**: Research the audience's real workflow. If they don't do the thing you're teaching, change to teach what they actually do — which may be "routing to the right resource" rather than "doing it themselves."
 
 ## References
 
