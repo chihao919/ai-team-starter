@@ -9,12 +9,28 @@ A ready-to-use framework for building an AI agent team with Claude Code.
 ├── .claude/
 │   ├── skills/
 │   │   ├── CATALOG.md           ← Overview of all skills
-│   │   ├── example-skill/       ← Template: how to define a multi-agent workflow
-│   │   └── agent-builder/       ← Built-in: create or modify agent roles
+│   │   ├── ai-team-architecture/← 3-layer architecture design + multi-model routing
+│   │   ├── ogsm-framework/     ← OGSM strategic planning (with validators + scripts)
+│   │   ├── ai-collab/          ← Multi-model task router (Claude/Gemini/Codex)
+│   │   ├── ai-fallback/        ← Quota-aware fallback chain
+│   │   ├── content-scout/      ← Blog idea extraction from technical content
+│   │   ├── writing-guide/      ← Article writing standards
+│   │   ├── security-check/     ← Pre-push secret scanner
+│   │   ├── agent-builder/      ← Create/modify agent roles
+│   │   └── example-skill/      ← Template for building your own skills
 │   └── memory/
 │       └── MEMORY.md            ← Lean index template
 └── README.md                    ← You're reading it
 ```
+
+## Skills included
+
+| Category | Skills | Purpose |
+|----------|--------|---------|
+| **Architecture** | ai-team-architecture, ogsm-framework | Design agent teams with OGSM goals + 3-layer setup |
+| **Multi-model** | ai-collab, ai-fallback | Route tasks to Claude/Gemini/Codex with fallback chains |
+| **Content** | content-scout, writing-guide | Find article topics + enforce writing standards |
+| **Utility** | security-check, agent-builder | Secret scanning + agent role management |
 
 ## Quick Start (5 minutes)
 
@@ -37,7 +53,7 @@ Team Leader: dispatches researchers + writers + reviewers (in parallel)
 ## Customize for your project
 
 - **CLAUDE.md**: Edit the intent detection table for your workflows
-- **example-skill/SKILL.md**: Replace with your real workflow (define roles, tools, direction seed)
+- **Skills**: Add domain-specific skills using example-skill/ as a template
 - **MEMORY.md**: Add your behavior preferences and skill pointers
 - **CATALOG.md**: List your skills as you build them
 
